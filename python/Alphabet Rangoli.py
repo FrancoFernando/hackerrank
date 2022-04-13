@@ -16,7 +16,8 @@ def print_rangoli(size):
         letter = letters[size-i-1]
         rangoli.append('-'.join([prefix,letter,suffix]).center(row_size,'-'))
     
-    rangoli.extend(rangoli[-2::-1])
+    # rangoli.extend(rangoli[-2::-1])
+    rangoli.extend(reversed(rangoli[:-1]))
     print('\n'.join(rangoli))
 
 if __name__ == '__main__':
