@@ -2,6 +2,10 @@ from string import ascii_lowercase
 
 def print_rangoli(size):
     
+    if size == 1:
+        print('a')
+        return
+    
     letters = ascii_lowercase[:size]
     rangoli = []
     row_size = 4*size-3
